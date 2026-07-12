@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ArD — Mechanical Engineer, Aerospace</title>
+<meta name="description" content="Engineering portfolio of ArD, Mechanical Engineer with an Aerospace focus.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- CLASSIFICATION / HEADER STRIP -->
+  <header class="doc-header">
+    <div class="doc-header__row">
+      <span>DEPT. OF MECHANICAL &amp; AEROSPACE ENGINEERING</span>
+      <span>FILE NO. ME-AERO-001</span>
+    </div>
+    <div class="doc-header__row">
+      <span>DISTRIBUTION: UNLIMITED</span>
+      <span id="doc-date">DATE: —</span>
+    </div>
+  </header>
+
+  <div class="rule rule--thick" aria-hidden="true"></div>
+
+  <!-- TITLE BLOCK -->
+  <section class="title-block">
+    <p class="title-block__eyebrow">PORTFOLIO OF RECORD</p>
+    <h1 class="title-block__name">ArD</h1>
+    <p class="title-block__role">Mechanical Engineer &nbsp;·&nbsp; Aerospace Focus</p>
+    <p class="title-block__sub">B.S. Mechanical Engineering, Rutgers University — New Brunswick</p>
+
+    <div class="stamp" id="stamp" aria-hidden="true">
+      <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="rough">
+            <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" result="noise" seed="7"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="6"/>
+          </filter>
+        </defs>
+        <g filter="url(#rough)" fill="none" stroke="currentColor" stroke-width="4">
+          <circle cx="110" cy="110" r="92"/>
+          <circle cx="110" cy="110" r="78"/>
+          <path id="stampArcTop" d="M 38 110 A 72 72 0 0 1 182 110" fill="none"/>
+          <path id="stampArcBottom" d="M 182 110 A 72 72 0 0 1 38 110" fill="none"/>
+        </g>
+        <text filter="url(#rough)" fill="currentColor" font-family="'Special Elite', monospace" font-size="19" letter-spacing="3">
+          <textPath href="#stampArcTop" startOffset="50%" text-anchor="middle">APPROVED FOR REVIEW</textPath>
+        </text>
+        <text filter="url(#rough)" fill="currentColor" font-family="'Special Elite', monospace" font-size="15" letter-spacing="2">
+          <textPath href="#stampArcBottom" startOffset="50%" text-anchor="middle">MECHANICAL · AEROSPACE</textPath>
+        </text>
+        <text x="110" y="103" filter="url(#rough)" fill="currentColor" font-family="'Special Elite', monospace" font-size="30" text-anchor="middle">A.D.</text>
+        <text x="110" y="128" filter="url(#rough)" fill="currentColor" font-family="'Special Elite', monospace" font-size="13" text-anchor="middle" letter-spacing="1">REV. 2026</text>
+      </svg>
+    </div>
+  </section>
+
+  <div class="rule" aria-hidden="true"></div>
+
+  <!-- SECTION I — SUMMARY -->
+  <section class="doc-section">
+    <h2 class="doc-section__heading"><span class="doc-section__numeral">SECTION I</span> SUMMARY</h2>
+    <p>
+      Replace this paragraph with a short summary of your engineering interests and
+      background — e.g. what drew you to aerospace, what kind of problems you like
+      working on (propulsion, structures, controls, fluids), and what you're looking
+      for next (internship, full-time role, research).
+    </p>
+  </section>
+
+  <div class="rule" aria-hidden="true"></div>
+
+  <!-- SECTION II — PROJECTS -->
+  <section class="doc-section">
+    <h2 class="doc-section__heading"><span class="doc-section__numeral">SECTION II</span> PROJECT RECORDS</h2>
+
+    <article class="project">
+      <h3 class="project__title">II.A &nbsp; [Project Name]</h3>
+      <table class="spec-table">
+        <tbody>
+          <tr><th>ROLE</th><td>[e.g. Lead Design Engineer]</td></tr>
+          <tr><th>PERIOD</th><td>[MM/YYYY – MM/YYYY]</td></tr>
+          <tr><th>TOOLS</th><td>[SolidWorks, MATLAB, ANSYS, etc.]</td></tr>
+        </tbody>
+      </table>
+      <p>
+        Describe the project: the problem, your approach, and the outcome.
+        Keep it concrete — mention a real constraint you solved for (weight,
+        thermal load, stress margin, cost) and a measurable result.
+      </p>
+      <p class="fig-caption">FIG. 1 — [Caption for a photo, CAD render, or plot. Add the image via an &lt;img&gt; tag above this caption.]</p>
+    </article>
+
+    <article class="project">
+      <h3 class="project__title">II.B &nbsp; [Project Name]</h3>
+      <table class="spec-table">
+        <tbody>
+          <tr><th>ROLE</th><td>[Your role]</td></tr>
+          <tr><th>PERIOD</th><td>[MM/YYYY – MM/YYYY]</td></tr>
+          <tr><th>TOOLS</th><td>[Tools used]</td></tr>
+        </tbody>
+      </table>
+      <p>
+        Second project description goes here. Duplicate this &lt;article
+        class="project"&gt; block for each additional project you want to add.
+      </p>
+      <p class="fig-caption">FIG. 2 — [Caption for supporting figure.]</p>
+    </article>
+
+    <article class="project">
+      <h3 class="project__title">II.C &nbsp; [Project Name]</h3>
+      <table class="spec-table">
+        <tbody>
+          <tr><th>ROLE</th><td>[Your role]</td></tr>
+          <tr><th>PERIOD</th><td>[MM/YYYY – MM/YYYY]</td></tr>
+          <tr><th>TOOLS</th><td>[Tools used]</td></tr>
+        </tbody>
+      </table>
+      <p>
+        Third project description goes here.
+      </p>
+      <p class="fig-caption">FIG. 3 — [Caption for supporting figure.]</p>
+    </article>
+  </section>
+
+  <div class="rule" aria-hidden="true"></div>
+
+  <!-- SECTION III — SPECIFICATIONS / SKILLS -->
+  <section class="doc-section">
+    <h2 class="doc-section__heading"><span class="doc-section__numeral">SECTION III</span> SPECIFICATIONS</h2>
+    <table class="spec-table spec-table--wide">
+      <thead>
+        <tr><th>CATEGORY</th><th>ITEM</th><th>PROFICIENCY</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>CAD / Design</td><td>SolidWorks, Fusion 360</td><td>Proficient</td></tr>
+        <tr><td>Analysis</td><td>ANSYS, MATLAB</td><td>Proficient</td></tr>
+        <tr><td>Manufacturing</td><td>CNC, 3D Printing, Machining</td><td>Familiar</td></tr>
+        <tr><td>Programming</td><td>Python, C++</td><td>Familiar</td></tr>
+        <tr><td>[Add row]</td><td>[Add item]</td><td>[Add level]</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="rule" aria-hidden="true"></div>
+
+  <!-- SECTION IV — CONTACT -->
+  <section class="doc-section">
+    <h2 class="doc-section__heading"><span class="doc-section__numeral">SECTION IV</span> CONTACT &amp; ENDORSEMENT</h2>
+    <div class="signature-block">
+      <p>Prepared by: <span class="fill">ArD</span></p>
+      <p>Email: <a class="fill" href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a class="fill" href="#" target="_blank" rel="noopener">linkedin.com/in/your-handle</a></p>
+      <p>GitHub: <a class="fill" href="#" target="_blank" rel="noopener">github.com/your-handle</a></p>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <span>PAGE 1 OF 1</span>
+    <span>END OF RECORD</span>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
