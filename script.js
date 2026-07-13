@@ -12,8 +12,9 @@
 })();
 
 // Types the title block in line by line, like it's being struck out on a
-// typewriter. Falls back to showing everything instantly if the visitor
-// has reduced motion set, or if something goes wrong.
+// typewriter. This is a one-time, non-looping reveal, so it plays even
+// when the OS "reduce motion" setting is on -- only the looping cursor
+// blink (a separate, purely decorative animation) is skipped in that case.
 (function () {
   var lines = Array.prototype.slice.call(document.querySelectorAll('[data-type]'));
   if (!lines.length) return;
@@ -23,10 +24,6 @@
 
   // Store each line's real text, then clear it for typing.
   var originals = lines.map(function (el) { return el.textContent; });
-
-  if (prefersReducedMotion) {
-    return; // leave original text in place, no animation
-  }
 
   lines.forEach(function (el) { el.textContent = ''; });
 
@@ -40,6 +37,7 @@
     var text = originals[index];
     var cursor = document.createElement('span');
     cursor.className = 'typing-cursor';
+    if (prefersReducedMotion) cursor.classList.add('typing-cursor--static');
     el.appendChild(cursor);
 
     var charIndex = 0;

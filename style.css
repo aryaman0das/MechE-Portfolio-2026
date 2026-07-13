@@ -154,8 +154,9 @@ body::before {
   50%, 100% { opacity: 0; }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .typing-cursor { animation: none; opacity: 0; }
+.typing-cursor--static {
+  animation: none;
+  opacity: 1;
 }
 
 /* ---------- sections ---------- */
